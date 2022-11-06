@@ -1,0 +1,142 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     challenge-newbies-2018-w3p1n
+Instances:    14399
+Attributes:   13
+              slide0
+              slide1
+              slide2
+              slide3
+              slide4
+              slide5
+              slide6
+              slide7
+              slide8
+              slide9
+              slide10
+              slide11
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                Class
+Attribute      class0 class2 class1
+               (0.31) (0.65) (0.04)
+====================================
+slide0
+  Zero          1021.0 2187.0  133.0
+  One             38.0   60.0    8.0
+  [total]       1059.0 2247.0  141.0
+
+slide1
+  One            373.0 1088.0   86.0
+  Zero           686.0 1159.0   55.0
+  [total]       1059.0 2247.0  141.0
+
+slide2
+  One            352.0 1057.0   87.0
+  Zero           707.0 1190.0   54.0
+  [total]       1059.0 2247.0  141.0
+
+slide3
+  One             20.0   45.0    5.0
+  Zero          1039.0 2202.0  136.0
+  class2           1.0    1.0    1.0
+  class0           1.0    1.0    1.0
+  class1           1.0    1.0    1.0
+  [total]       1062.0 2250.0  144.0
+
+slide4
+  class2           1.0    1.0    1.0
+  class0           1.0    1.0    1.0
+  class1           1.0    1.0    1.0
+  Zero           759.0 1268.0   67.0
+  One            300.0  979.0   74.0
+  [total]       1062.0 2250.0  144.0
+
+slide5
+  class2         669.0 2202.0  124.0
+  class0         371.0   31.0   11.0
+  class1          20.0   15.0    7.0
+  Zero             1.0    1.0    1.0
+  One              1.0    1.0    1.0
+  [total]       1062.0 2250.0  144.0
+
+slide6
+  One              1.0    1.0    1.0
+  Zero             1.0    1.0    1.0
+  class0         497.0   26.0   11.0
+  class1         144.0   60.0   40.0
+  class2         419.0 2162.0   91.0
+  [total]       1062.0 2250.0  144.0
+
+slide7
+  One            207.0 1036.0   75.0
+  Zero           852.0 1211.0   66.0
+  [total]       1059.0 2247.0  141.0
+
+slide8
+  One            198.0 1019.0   72.0
+  Zero           861.0 1228.0   69.0
+  class0           1.0    1.0    1.0
+  class2           1.0    1.0    1.0
+  class1           1.0    1.0    1.0
+  [total]       1062.0 2250.0  144.0
+
+slide9
+  One            185.0 1021.0   71.0
+  Zero           874.0 1226.0   70.0
+  [total]       1059.0 2247.0  141.0
+
+slide10
+  One            178.0 1003.0   74.0
+  Zero           881.0 1244.0   67.0
+  class0           1.0    1.0    1.0
+  class2           1.0    1.0    1.0
+  class1           1.0    1.0    1.0
+  [total]       1062.0 2250.0  144.0
+
+slide11
+  class2           1.0    1.0    1.0
+  class1           1.0    1.0    1.0
+  class0           1.0    1.0    1.0
+  Zero          1012.0 2075.0  127.0
+  One             47.0  172.0   14.0
+  [total]       1062.0 2250.0  144.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2043               59.3723 %
+Incorrectly Classified Instances      1398               40.6277 %
+Kappa statistic                          0.259 
+Mean absolute error                      0.24  
+Root mean squared error                  0.3795
+Relative absolute error                 75.2165 %
+Root relative squared error             95.0374 %
+Total Number of Instances             3441     
+Ignored Class Unknown Instances              10958     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.736    0.424    0.435      0.736    0.547      0.288    0.820     0.472     class0
+                 0.554    0.242    0.811      0.554    0.659      0.299    0.960     0.750     class2
+                 0.151    0.030    0.175      0.151    0.162      0.130    0.225     0.006     class1
+Weighted Avg.    0.594    0.289    0.670      0.594    0.604      0.289    0.887     0.634     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+  778  226   53 |    a = class0
+  955 1244   46 |    b = class2
+   55   63   21 |    c = class1
+

@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     end-of-challenge-challenge-intermediate-2018-weka.filters.unsupervised.attribute.Remove-R165-169-weka.filters.unsupervised.attribute.Remove-R93-164-weka.filters.unsupervised.attribute.Remove-R72-91-weka.filters.unsupervised.attribute.Remove-R55-71-weka.filters.unsupervised.attribute.Remove-R37-54-weka.filters.unsupervised.attribute.Remove-R24
+Instances:    5442
+Attributes:   36
+              Slide 0
+              Slide 1
+              Slide 2
+              Slide 3
+              Slide 4
+              Slide 5
+              Slide 6
+              Slide 7
+              Slide 8
+              Slide 9
+              Slide 10
+              Slide 11
+              Slide 12
+              Slide 13
+              Slide 14
+              Slide 15
+              Slide 16
+              Slide 17
+              Slide 18
+              Slide 19
+              Slide 20
+              Slide 21
+              Slide 22
+              Slide 24
+              Slide 25
+              Slide 26
+              Slide 27
+              Slide 28
+              Slide 29
+              Slide 30
+              Slide 31
+              Slide 32
+              Slide 33
+              Slide 34
+              Slide 35
+              Slide 91
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 36 Slide 91):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.271   34 Slide 34
+ 0.252   30 Slide 30
+ 0.216   26 Slide 26
+ 0.199   18 Slide 17
+ 0.124    9 Slide 8
+
+Selected attributes: 34,30,26,18,9 : 5
+
+
+Header of reduced data:
+@relation 'end-of-challenge-challenge-intermediate-2018-weka.filters.unsupervised.attribute.Remove-R165-169-weka.filters.unsupervised.attribute.Remove-R93-164-weka.filters.unsupervised.attribute.Remove-R72-91-weka.filters.unsupervised.attribute.Remove-R55-71-weka.filters.unsupervised.attribute.Remove-R37-54-weka.filters.unsupervised.attribute.Remove-R24-weka.filters.unsupervised.attribute.Remove-V-R34,30,26,18,9,36'
+
+@attribute 'Slide 34' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 30' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 26' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 17' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 8' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 91' {'Passed submission','No submission','Failed submission'}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+Slide 34 = Passed submission
+|   Slide 30 = Passed submission: Passed submission (3700.0/1287.0)
+|   Slide 30 = No submission
+|   |   Slide 17 = Passed submission
+|   |   |   Slide 26 = Passed submission: Passed submission (42.0/17.0)
+|   |   |   Slide 26 = No submission: No submission (5.0/1.0)
+|   |   |   Slide 26 = Failed submission: Passed submission (0.0)
+|   |   Slide 17 = No submission: No submission (14.0/3.0)
+|   |   Slide 17 = Failed submission: No submission (1.0)
+|   Slide 30 = Failed submission: No submission (26.0/9.0)
+Slide 34 = No submission: No submission (1579.0/64.0)
+Slide 34 = Failed submission: No submission (75.0/16.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	13
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4038               74.2007 %
+Incorrectly Classified Instances      1404               25.7993 %
+Kappa statistic                          0.4995
+Mean absolute error                      0.2323
+Root mean squared error                  0.3414
+Relative absolute error                 68.9385 %
+Root relative squared error             83.1929 %
+Total Number of Instances             5442     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.962    0.449    0.651      0.962    0.776      0.552    0.749     0.636     Passed submission
+                 0.558    0.038    0.943      0.558    0.702      0.561    0.753     0.806     No submission
+                 0.000    0.000    ?          0.000    ?          ?        0.631     0.010     Failed submission
+Weighted Avg.    0.742    0.229    ?          0.742    ?          ?        0.751     0.721     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 2434   96    0 |    a = Passed submission
+ 1268 1604    0 |    b = No submission
+   39    1    0 |    c = Failed submission
+

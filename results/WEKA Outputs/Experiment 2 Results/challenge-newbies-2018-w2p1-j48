@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     challenge-newbies-2018-w2p1
+Instances:    10621
+Attributes:   13
+              slide0
+              slide1
+              slide2
+              slide3
+              slide4
+              slide5
+              slide6
+              slide7
+              slide8
+              slide9
+              slide10
+              slide11
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+slide6 = One: class2 (0.0)
+slide6 = Zero: class2 (0.0)
+slide6 = class0: class0 (531.0/35.0)
+slide6 = class1
+|   slide10 = One
+|   |   slide3 = One: class1 (4.0/1.0)
+|   |   slide3 = Zero
+|   |   |   slide2 = One
+|   |   |   |   slide4 = class2: class2 (0.0)
+|   |   |   |   slide4 = class0: class2 (0.0)
+|   |   |   |   slide4 = class1: class2 (0.0)
+|   |   |   |   slide4 = Zero: class0 (10.0/5.0)
+|   |   |   |   slide4 = One: class2 (83.0/47.0)
+|   |   |   slide2 = Zero: class2 (3.0/1.0)
+|   |   slide3 = class2: class2 (0.0)
+|   |   slide3 = class0: class2 (0.0)
+|   |   slide3 = class1: class2 (0.0)
+|   slide10 = Zero: class0 (141.0/34.0)
+slide6 = class2: class2 (2669.0/508.0)
+
+Number of Leaves  : 	15
+
+Size of the tree : 	20
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2798               81.3136 %
+Incorrectly Classified Instances       643               18.6864 %
+Kappa statistic                          0.5531
+Mean absolute error                      0.2015
+Root mean squared error                  0.3191
+Relative absolute error                 63.1532 %
+Root relative squared error             79.9057 %
+Total Number of Instances             3441     
+Ignored Class Unknown Instances               7180     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.571    0.034    0.880      0.571    0.693      0.620    0.642     0.571     class0
+                 0.976    0.462    0.799      0.976    0.879      0.609    0.933     0.774     class2
+                 0.014    0.002    0.200      0.014    0.027      0.044    0.362     0.068     class1
+Weighted Avg.    0.813    0.312    0.800      0.813    0.787      0.590    0.821     0.683     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+  604  448    5 |    a = class0
+   50 2192    3 |    b = class2
+   32  105    2 |    c = class1
+

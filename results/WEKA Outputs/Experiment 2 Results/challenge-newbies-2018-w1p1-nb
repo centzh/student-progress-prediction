@@ -1,0 +1,116 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     challenge-newbies-2018-w1p1
+Instances:    4654
+Attributes:   12
+              slide0
+              slide1
+              slide2
+              slide3
+              slide4
+              slide5
+              slide6
+              slide7
+              slide8
+              slide9
+              slide10
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                Class
+Attribute      class2 class1 class0
+               (0.65) (0.04) (0.31)
+====================================
+slide0
+  Zero          3007.0  193.0 1411.0
+  One             25.0    7.0   17.0
+  [total]       3032.0  200.0 1428.0
+
+slide1
+  One           1228.0   82.0  280.0
+  Zero          1804.0  118.0 1148.0
+  [total]       3032.0  200.0 1428.0
+
+slide2
+  One           1387.0   85.0  289.0
+  Zero          1645.0  115.0 1139.0
+  [total]       3032.0  200.0 1428.0
+
+slide3
+  One           1329.0   83.0  264.0
+  Zero          1703.0  117.0 1164.0
+  [total]       3032.0  200.0 1428.0
+
+slide4
+  class2        2875.0  176.0  537.0
+  class0         140.0   19.0  886.0
+  class1          18.0    6.0    6.0
+  [total]       3033.0  201.0 1429.0
+
+slide5
+  class2        2951.0  168.0  404.0
+  class0          34.0   12.0  944.0
+  class1          48.0   21.0   81.0
+  [total]       3033.0  201.0 1429.0
+
+slide6
+  One           1530.0   96.0  220.0
+  Zero          1502.0  104.0 1208.0
+  [total]       3032.0  200.0 1428.0
+
+slide7
+  One           1302.0   80.0  129.0
+  Zero          1730.0  120.0 1299.0
+  [total]       3032.0  200.0 1428.0
+
+slide8
+  One           1301.0   72.0  107.0
+  Zero          1731.0  128.0 1321.0
+  [total]       3032.0  200.0 1428.0
+
+slide9
+  One           1289.0   65.0   89.0
+  Zero          1743.0  135.0 1339.0
+  [total]       3032.0  200.0 1428.0
+
+slide10
+  One           1375.0   49.0   42.0
+  Zero          1657.0  151.0 1386.0
+  [total]       3032.0  200.0 1428.0
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2935               63.064  %
+Incorrectly Classified Instances      1719               36.936  %
+Kappa statistic                          0.3125
+Mean absolute error                      0.2139
+Root mean squared error                  0.3836
+Relative absolute error                 66.7746 %
+Root relative squared error             95.8628 %
+Total Number of Instances             4654     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.581    0.219    0.832      0.581    0.684      0.346    0.840     0.887     class2
+                 0.000    0.001    0.000      0.000    0.000      -0.005   0.643     0.072     class1
+                 0.825    0.422    0.464      0.825    0.593      0.373    0.870     0.837     class0
+Weighted Avg.    0.631    0.272    0.684      0.631    0.627      0.340    0.841     0.837     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 1759    0 1271 |    a = class2
+  108    0   90 |    b = class1
+  247    3 1176 |    c = class0
+

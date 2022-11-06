@@ -1,0 +1,133 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     challenge-newbies-2018-w1p1
+Instances:    4654
+Attributes:   12
+              slide0
+              slide1
+              slide2
+              slide3
+              slide4
+              slide5
+              slide6
+              slide7
+              slide8
+              slide9
+              slide10
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: class2, class1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0007 * (normalized) slide0=One
+ +       0.0001 * (normalized) slide1=Zero
+ +      -0      * (normalized) slide2=Zero
+ +       0.0002 * (normalized) slide3=Zero
+ +      -0.0001 * (normalized) slide4=class2
+ +       0.0002 * (normalized) slide4=class0
+ +      -0.0001 * (normalized) slide4=class1
+ +      -0      * (normalized) slide5=class2
+ +      -0.0003 * (normalized) slide5=class0
+ +       0.0004 * (normalized) slide5=class1
+ +       0.0002 * (normalized) slide6=Zero
+ +      -0      * (normalized) slide7=Zero
+ +       0.0002 * (normalized) slide8=Zero
+ +       0.0002 * (normalized) slide9=Zero
+ +       0.0001 * (normalized) slide10=Zero
+ -       1.0005
+
+Number of kernel evaluations: 1890411 (53.234% cached)
+
+Classifier for classes: class2, class0
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0003 * (normalized) slide0=One
+ +       0.0005 * (normalized) slide1=Zero
+ +       0.0001 * (normalized) slide2=Zero
+ +      -1.0007 * (normalized) slide3=Zero
+ +       0.0002 * (normalized) slide4=class2
+ +      -0.0001 * (normalized) slide4=class0
+ +      -0.0001 * (normalized) slide4=class1
+ +      -1.3339 * (normalized) slide5=class2
+ +       0.6672 * (normalized) slide5=class0
+ +       0.6667 * (normalized) slide5=class1
+ +      -0.0001 * (normalized) slide6=Zero
+ +      -0.0004 * (normalized) slide7=Zero
+ +       0.5004 * (normalized) slide8=Zero
+ +       0.5004 * (normalized) slide9=Zero
+ +       1.0007 * (normalized) slide10=Zero
+ -       0.6674
+
+Number of kernel evaluations: 6952932 (59.027% cached)
+
+Classifier for classes: class1, class0
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0008 * (normalized) slide0=One
+ +       0.0001 * (normalized) slide1=Zero
+ +       0.0001 * (normalized) slide2=Zero
+ +      -0.0006 * (normalized) slide3=Zero
+ +       0.0003 * (normalized) slide4=class2
+ +       0.0003 * (normalized) slide4=class0
+ +      -0.0006 * (normalized) slide4=class1
+ +      -0.0004 * (normalized) slide5=class2
+ +       0.0005 * (normalized) slide5=class0
+ +      -0.0002 * (normalized) slide5=class1
+ +       0      * (normalized) slide6=Zero
+ +       0.0001 * (normalized) slide7=Zero
+ +       0.0002 * (normalized) slide8=Zero
+ +       0.001  * (normalized) slide9=Zero
+ +       1.999  * (normalized) slide10=Zero
+ -       0.9998
+
+Number of kernel evaluations: 500618 (72.022% cached)
+
+
+
+Time taken to build model: 1.44 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4005               86.055  %
+Incorrectly Classified Instances       649               13.945  %
+Kappa statistic                          0.677 
+Mean absolute error                      0.2625
+Root mean squared error                  0.3378
+Relative absolute error                 81.9407 %
+Root relative squared error             84.4095 %
+Total Number of Instances             4654     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.349    0.840      0.980    0.904      0.704    0.817     0.837     class2
+                 0.000    0.000    ?          0.000    ?          ?        0.460     0.040     class1
+                 0.727    0.025    0.927      0.727    0.814      0.757    0.898     0.788     class0
+Weighted Avg.    0.861    0.235    ?          0.861    ?          ?        0.826     0.788     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 2969    0   61 |    a = class2
+  177    0   21 |    b = class1
+  390    0 1036 |    c = class0
+

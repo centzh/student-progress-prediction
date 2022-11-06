@@ -1,0 +1,102 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.GainRatioAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     end-of-challenge-challenge-beginners-blockly-2018-weka.filters.unsupervised.attribute.Remove-R153-154-weka.filters.unsupervised.attribute.Remove-R79-152-weka.filters.unsupervised.attribute.Remove-R63-77-weka.filters.unsupervised.attribute.Remove-R52-62-weka.filters.unsupervised.attribute.Remove-R35-51-weka.filters.unsupervised.attribute.Remove-R18-34
+Instances:    3477
+Attributes:   18
+              Slide 0
+              Slide 1
+              Slide 2
+              Slide 3
+              Slide 4
+              Slide 5
+              Slide 6
+              Slide 7
+              Slide 8
+              Slide 9
+              Slide 10
+              Slide 11
+              Slide 12
+              Slide 13
+              Slide 14
+              Slide 15
+              Slide 16
+              Slide 77
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 18 Slide 77):
+	Gain Ratio feature evaluator
+
+Ranked attributes:
+ 0.1804  16 Slide 15
+ 0.1596  14 Slide 13
+ 0.1278  10 Slide 9
+ 0.1045   8 Slide 7
+ 0.0916   4 Slide 3
+
+Selected attributes: 16,14,10,8,4 : 5
+
+
+Header of reduced data:
+@relation 'end-of-challenge-challenge-beginners-blockly-2018-weka.filters.unsupervised.attribute.Remove-R153-154-weka.filters.unsupervised.attribute.Remove-R79-152-weka.filters.unsupervised.attribute.Remove-R63-77-weka.filters.unsupervised.attribute.Remove-R52-62-weka.filters.unsupervised.attribute.Remove-R35-51-weka.filters.unsupervised.attribute.Remove-R18-34-weka.filters.unsupervised.attribute.Remove-V-R16,14,10,8,4,18'
+
+@attribute 'Slide 15' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 13' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 9' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 7' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 3' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 77' {'No submission','Passed submission','Failed submission'}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+: No submission (3477.0/618.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2859               82.2261 %
+Incorrectly Classified Instances       618               17.7739 %
+Kappa statistic                          0     
+Mean absolute error                      0.1951
+Root mean squared error                  0.3124
+Relative absolute error                 99.8778 %
+Root relative squared error             99.9999 %
+Total Number of Instances             3477     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.822      1.000    0.902      ?        0.499     0.822     No submission
+                 0.000    0.000    ?          0.000    ?          ?        0.497     0.176     Passed submission
+                 0.000    0.000    ?          0.000    ?          ?        0.200     0.001     Failed submission
+Weighted Avg.    0.822    0.822    ?          0.822    ?          ?        0.498     0.707     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 2859    0    0 |    a = No submission
+  614    0    0 |    b = Passed submission
+    4    0    0 |    c = Failed submission
+

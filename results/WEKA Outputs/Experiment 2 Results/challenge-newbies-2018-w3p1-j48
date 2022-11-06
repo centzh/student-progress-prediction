@@ -1,0 +1,84 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     challenge-newbies-2018-w3p1n
+Instances:    14399
+Attributes:   13
+              slide0
+              slide1
+              slide2
+              slide3
+              slide4
+              slide5
+              slide6
+              slide7
+              slide8
+              slide9
+              slide10
+              slide11
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+slide6 = One: class2 (0.0)
+slide6 = Zero: class2 (0.0)
+slide6 = class0: class0 (531.0/35.0)
+slide6 = class1
+|   slide10 = One
+|   |   slide3 = One: class1 (4.0/1.0)
+|   |   slide3 = Zero
+|   |   |   slide2 = One
+|   |   |   |   slide4 = class2: class2 (0.0)
+|   |   |   |   slide4 = class0: class2 (0.0)
+|   |   |   |   slide4 = class1: class2 (0.0)
+|   |   |   |   slide4 = Zero: class0 (10.0/5.0)
+|   |   |   |   slide4 = One: class2 (83.0/47.0)
+|   |   |   slide2 = Zero: class2 (3.0/1.0)
+|   |   slide3 = class2: class2 (0.0)
+|   |   slide3 = class0: class2 (0.0)
+|   |   slide3 = class1: class2 (0.0)
+|   slide10 = Zero: class0 (141.0/34.0)
+|   slide10 = class0: class0 (0.0)
+|   slide10 = class2: class0 (0.0)
+|   slide10 = class1: class0 (0.0)
+slide6 = class2: class2 (2669.0/508.0)
+
+Number of Leaves  : 	18
+
+Size of the tree : 	23
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2799               81.3426 %
+Incorrectly Classified Instances       642               18.6574 %
+Kappa statistic                          0.5525
+Mean absolute error                      0.2016
+Root mean squared error                  0.3186
+Relative absolute error                 63.1806 %
+Root relative squared error             79.7919 %
+Total Number of Instances             3441     
+Ignored Class Unknown Instances              10958     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.570    0.031    0.891      0.570    0.696      0.626    0.639     0.331     class0
+                 0.978    0.469    0.796      0.978    0.878      0.607    0.894     0.530     class2
+                 0.007    0.002    0.125      0.007    0.014      0.021    0.395     0.055     class1
+Weighted Avg.    0.813    0.316    0.798      0.813    0.787      0.589    0.795     0.450     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+  603  450    4 |    a = class0
+   47 2195    3 |    b = class2
+   27  111    1 |    c = class1
+

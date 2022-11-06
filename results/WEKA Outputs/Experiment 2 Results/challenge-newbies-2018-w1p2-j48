@@ -1,0 +1,78 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     challenge-newbies-2018-w1p2
+Instances:    8095
+Attributes:   13
+              slide0
+              slide1
+              slide2
+              slide3
+              slide4
+              slide5
+              slide6
+              slide7
+              slide8
+              slide9
+              slide10
+              slide11
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+slide6 = One: class2 (0.0)
+slide6 = Zero: class2 (0.0)
+slide6 = class0: class0 (531.0/35.0)
+slide6 = class1
+|   slide10 = One
+|   |   slide3 = One: class1 (4.0/1.0)
+|   |   slide3 = Zero
+|   |   |   slide2 = One
+|   |   |   |   slide4 = class2: class2 (0.0)
+|   |   |   |   slide4 = class0: class2 (0.0)
+|   |   |   |   slide4 = class1: class2 (0.0)
+|   |   |   |   slide4 = Zero: class0 (10.0/5.0)
+|   |   |   |   slide4 = One: class2 (83.0/47.0)
+|   |   |   slide2 = Zero: class2 (3.0/1.0)
+|   slide10 = Zero: class0 (141.0/34.0)
+slide6 = class2: class2 (2669.0/508.0)
+
+Number of Leaves  : 	12
+
+Size of the tree : 	17
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2796               81.2554 %
+Incorrectly Classified Instances       645               18.7446 %
+Kappa statistic                          0.5516
+Mean absolute error                      0.2017
+Root mean squared error                  0.3193
+Relative absolute error                 63.2381 %
+Root relative squared error             79.9614 %
+Total Number of Instances             3441     
+Ignored Class Unknown Instances               4654     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.575    0.036    0.875      0.575    0.694      0.619    0.660     0.595     class0
+                 0.975    0.463    0.798      0.975    0.877      0.605    0.921     0.777     class2
+                 0.000    0.001    0.000      0.000    0.000      -0.007   0.398     0.061     class1
+Weighted Avg.    0.813    0.313    0.789      0.813    0.786      0.585    0.820     0.692     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+  608  447    2 |    a = class0
+   55 2188    2 |    b = class2
+   32  107    0 |    c = class1
+

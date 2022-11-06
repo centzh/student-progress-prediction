@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     end-of-challenge-challenge-intermediate-2018-weka.filters.unsupervised.attribute.Remove-R165-169-weka.filters.unsupervised.attribute.Remove-R93-164-weka.filters.unsupervised.attribute.Remove-R72-91-weka.filters.unsupervised.attribute.Remove-R55-71-weka.filters.unsupervised.attribute.Remove-R37-54-weka.filters.unsupervised.attribute.Remove-R24-weka.filters.unsupervised.attribute.Remove-R20-35
+Instances:    5442
+Attributes:   20
+              Slide 0
+              Slide 1
+              Slide 2
+              Slide 3
+              Slide 4
+              Slide 5
+              Slide 6
+              Slide 7
+              Slide 8
+              Slide 9
+              Slide 10
+              Slide 11
+              Slide 12
+              Slide 13
+              Slide 14
+              Slide 15
+              Slide 16
+              Slide 17
+              Slide 18
+              Slide 91
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 20 Slide 91):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.19901  18 Slide 17
+ 0.1244    9 Slide 8
+ 0.00585  13 Slide 12
+ 0.00321  11 Slide 10
+ 0.00299  12 Slide 11
+
+Selected attributes: 18,9,13,11,12 : 5
+
+
+Header of reduced data:
+@relation 'end-of-challenge-challenge-intermediate-2018-weka.filters.unsupervised.attribute.Remove-R165-169-weka.filters.unsupervised.attribute.Remove-R93-164-weka.filters.unsupervised.attribute.Remove-R72-91-weka.filters.unsupervised.attribute.Remove-R55-71-weka.filters.unsupervised.attribute.Remove-R37-54-weka.filters.unsupervised.attribute.Remove-R24-weka.filters.unsupervised.attribute.Remove-R20-35-weka.filters.unsupervised.attribute.Remove-V-R18,9,13,11-12,20'
+
+@attribute 'Slide 17' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 8' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 12' {'Not completed',Completed}
+@attribute 'Slide 10' {'Not completed',Completed}
+@attribute 'Slide 11' {'Not completed',Completed}
+@attribute 'Slide 91' {'Passed submission','No submission','Failed submission'}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+Slide 17 = Passed submission: Passed submission (4142.0/1671.0)
+Slide 17 = No submission: No submission (1256.0/53.0)
+Slide 17 = Failed submission: No submission (44.0/6.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	4
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3699               67.9713 %
+Incorrectly Classified Instances      1743               32.0287 %
+Kappa statistic                          0.3837
+Mean absolute error                      0.2621
+Root mean squared error                  0.3625
+Relative absolute error                 77.7812 %
+Root relative squared error             88.3272 %
+Total Number of Instances             5442     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.967    0.570    0.596      0.967    0.737      0.460    0.698     0.592     Passed submission
+                 0.436    0.032    0.938      0.436    0.595      0.468    0.701     0.765     No submission
+                 0.000    0.000    ?          0.000    ?          ?        0.615     0.010     Failed submission
+Weighted Avg.    0.680    0.282    ?          0.680    ?          ?        0.699     0.679     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 2447   83    0 |    a = Passed submission
+ 1620 1252    0 |    b = No submission
+   40    0    0 |    c = Failed submission
+

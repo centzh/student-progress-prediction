@@ -1,0 +1,144 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     challenge-newbies-2018-w1p2
+Instances:    8095
+Attributes:   13
+              slide0
+              slide1
+              slide2
+              slide3
+              slide4
+              slide5
+              slide6
+              slide7
+              slide8
+              slide9
+              slide10
+              slide11
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: class0, class2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0      * (normalized) slide0=One
+ +      -0.0001 * (normalized) slide1=Zero
+ +       0.0003 * (normalized) slide2=Zero
+ +       0.0007 * (normalized) slide3=Zero
+ +      -0.0002 * (normalized) slide4=Zero
+ +       0.0002 * (normalized) slide4=One
+ +       0.0001 * (normalized) slide5=class2
+ +      -0.0001 * (normalized) slide5=class0
+ +      -0      * (normalized) slide5=class1
+ +      -0.6667 * (normalized) slide6=class0
+ +      -0.6666 * (normalized) slide6=class1
+ +       1.3333 * (normalized) slide6=class2
+ +       0.0001 * (normalized) slide7=Zero
+ +       0.0003 * (normalized) slide8=Zero
+ +      -0.0003 * (normalized) slide9=Zero
+ +       0.0001 * (normalized) slide10=Zero
+ +      -0.0001 * (normalized) slide11=Zero
+ +       0.0001 * (normalized) slide11=One
+ -       0.3339
+
+Number of kernel evaluations: 2300696 (51.064% cached)
+
+Classifier for classes: class0, class1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0002 * (normalized) slide0=One
+ +       0.0007 * (normalized) slide1=Zero
+ +      -0.001  * (normalized) slide2=Zero
+ +      -0.0004 * (normalized) slide3=Zero
+ +      -0.0001 * (normalized) slide4=Zero
+ +       0.0001 * (normalized) slide4=One
+ +      -0.0006 * (normalized) slide5=class2
+ +       0.0001 * (normalized) slide5=class0
+ +       0.0005 * (normalized) slide5=class1
+ +      -0.0005 * (normalized) slide6=class0
+ +       0.0003 * (normalized) slide6=class1
+ +       0.0002 * (normalized) slide6=class2
+ +      -0.0005 * (normalized) slide7=Zero
+ +       0.0006 * (normalized) slide8=Zero
+ +       0      * (normalized) slide9=Zero
+ +      -0.0002 * (normalized) slide10=Zero
+ +       0.0001 * (normalized) slide11=Zero
+ +      -0.0001 * (normalized) slide11=One
+ -       0.9991
+
+Number of kernel evaluations: 335340 (63.62% cached)
+
+Classifier for classes: class2, class1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0001 * (normalized) slide0=One
+ +       0      * (normalized) slide1=Zero
+ +      -0.0002 * (normalized) slide2=Zero
+ +      -0.0003 * (normalized) slide3=Zero
+ +       0.0004 * (normalized) slide4=Zero
+ +      -0.0004 * (normalized) slide4=One
+ +      -0.0002 * (normalized) slide5=class2
+ +       0.0003 * (normalized) slide5=class0
+ +      -0.0001 * (normalized) slide5=class1
+ +      -0.0003 * (normalized) slide6=class0
+ +       0.0003 * (normalized) slide6=class1
+ +      -0      * (normalized) slide6=class2
+ +       0.0001 * (normalized) slide7=Zero
+ +       0.0001 * (normalized) slide8=Zero
+ +       0.0002 * (normalized) slide9=Zero
+ +      -0.0002 * (normalized) slide10=Zero
+ +       0      * (normalized) slide11=Zero
+ +      -0      * (normalized) slide11=One
+ -       0.9997
+
+Number of kernel evaluations: 1068831 (66.27% cached)
+
+
+
+Time taken to build model: 0.46 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2800               81.3717 %
+Incorrectly Classified Instances       641               18.6283 %
+Kappa statistic                          0.5617
+Mean absolute error                      0.2726
+Root mean squared error                  0.3528
+Relative absolute error                 85.4474 %
+Root relative squared error             88.3446 %
+Total Number of Instances             3441     
+Ignored Class Unknown Instances               4654     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.605    0.056    0.828      0.605    0.699      0.607    0.462     0.123     class0
+                 0.963    0.425    0.810      0.963    0.880      0.614    0.938     0.790     class2
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.017     class1
+Weighted Avg.    0.814    0.294    ?          0.814    ?          ?        0.774     0.554     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+  639  418    0 |    a = class0
+   84 2161    0 |    b = class2
+   49   90    0 |    c = class1
+

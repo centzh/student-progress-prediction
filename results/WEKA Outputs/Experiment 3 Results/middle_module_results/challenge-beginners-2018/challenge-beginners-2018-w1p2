@@ -1,0 +1,247 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.GainRatioAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1" -W weka.classifiers.meta.AttributeSelectedClassifier -- -E "weka.attributeSelection.CfsSubsetEval -P 1 -E 1" -S "weka.attributeSelection.BestFirst -D 1 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     end-of-challenge-challenge-beginners-2018-weka.filters.unsupervised.attribute.Remove-R175-179-weka.filters.unsupervised.attribute.Remove-R89-174-weka.filters.unsupervised.attribute.Remove-R74-87-weka.filters.unsupervised.attribute.Remove-R58-73-weka.filters.unsupervised.attribute.Remove-R41-57
+Instances:    8657
+Attributes:   41
+              Slide 0
+              Slide 1
+              Slide 2
+              Slide 3
+              Slide 4
+              Slide 5
+              Slide 6
+              Slide 7
+              Slide 8
+              Slide 9
+              Slide 10
+              Slide 11
+              Slide 12
+              Slide 13
+              Slide 14
+              Slide 15
+              Slide 16
+              Slide 17
+              Slide 18
+              Slide 19
+              Slide 20
+              Slide 21
+              Slide 22
+              Slide 23
+              Slide 24
+              Slide 25
+              Slide 26
+              Slide 27
+              Slide 28
+              Slide 29
+              Slide 30
+              Slide 31
+              Slide 32
+              Slide 33
+              Slide 34
+              Slide 35
+              Slide 36
+              Slide 37
+              Slide 38
+              Slide 39
+              Slide 87
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 41 Slide 87):
+	Gain Ratio feature evaluator
+
+Ranked attributes:
+ 0.300417   39 Slide 38
+ 0.283814   36 Slide 35
+ 0.279768   29 Slide 28
+ 0.252732   23 Slide 22
+ 0.247299   20 Slide 19
+ 0.227015   17 Slide 16
+ 0.179361   13 Slide 12
+ 0.173884   10 Slide 9
+ 0.143909    6 Slide 5
+ 0.070047   35 Slide 34
+ 0.061192   37 Slide 36
+ 0.057194   30 Slide 29
+ 0.057051   31 Slide 30
+ 0.056084   33 Slide 32
+ 0.048288   34 Slide 33
+ 0.037906   27 Slide 26
+ 0.037705   26 Slide 25
+ 0.034649   28 Slide 27
+ 0.029342   21 Slide 20
+ 0.026246   25 Slide 24
+ 0.023692   24 Slide 23
+ 0.018512   15 Slide 14
+ 0.018399   14 Slide 13
+ 0.017244   22 Slide 21
+ 0.016176   18 Slide 17
+ 0.014353   32 Slide 31
+ 0.0128      8 Slide 7
+ 0.012663   19 Slide 18
+ 0.012271    7 Slide 6
+ 0.011368    9 Slide 8
+ 0.011363   12 Slide 11
+ 0.011114   11 Slide 10
+ 0.009476   16 Slide 15
+ 0.005176    5 Slide 4
+ 0.004995    2 Slide 1
+ 0.002142    4 Slide 3
+ 0.001963    1 Slide 0
+ 0.00123     3 Slide 2
+ 0.000571   38 Slide 37
+ 0          40 Slide 39
+
+Selected attributes: 39,36,29,23,20,17,13,10,6,35,37,30,31,33,34,27,26,28,21,25,24,15,14,22,18,32,8,19,7,9,12,11,16,5,2,4,1,3,38,40 : 40
+
+
+Header of reduced data:
+@relation 'end-of-challenge-challenge-beginners-2018-weka.filters.unsupervised.attribute.Remove-R175-179-weka.filters.unsupervised.attribute.Remove-R89-174-weka.filters.unsupervised.attribute.Remove-R74-87-weka.filters.unsupervised.attribute.Remove-R58-73-weka.filters.unsupervised.attribute.Remove-R41-57-weka.filters.unsupervised.attribute.Remove-V-R39,36,29,23,20,17,13,10,6,35,37,30-31,33-34,27,26,28,21,25,24,15,14,22,18,32,8,19,7,9,12,11,16,5,2,4,1,3,38,40-41'
+
+@attribute 'Slide 0' {'Not completed',Completed}
+@attribute 'Slide 1' {'Not completed',Completed}
+@attribute 'Slide 2' {'Not completed',Completed}
+@attribute 'Slide 3' {'Not completed',Completed}
+@attribute 'Slide 4' {'Not completed',Completed}
+@attribute 'Slide 5' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 6' {'Not completed',Completed}
+@attribute 'Slide 7' {'Not completed',Completed}
+@attribute 'Slide 8' {'Not completed',Completed}
+@attribute 'Slide 9' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 10' {'Not completed',Completed}
+@attribute 'Slide 11' {'Not completed',Completed}
+@attribute 'Slide 12' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 13' {'Not completed',Completed}
+@attribute 'Slide 14' {'Not completed',Completed}
+@attribute 'Slide 15' {'Not completed',Completed}
+@attribute 'Slide 16' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 17' {'Not completed',Completed}
+@attribute 'Slide 18' {'Not completed',Completed}
+@attribute 'Slide 19' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 20' {'Not completed',Completed}
+@attribute 'Slide 21' {'Not completed',Completed}
+@attribute 'Slide 22' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 23' {'Not completed',Completed}
+@attribute 'Slide 24' {'Not completed',Completed}
+@attribute 'Slide 25' {'Not completed',Completed}
+@attribute 'Slide 26' {'Not completed',Completed}
+@attribute 'Slide 27' {'Not completed',Completed}
+@attribute 'Slide 28' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 29' {'Not completed',Completed}
+@attribute 'Slide 30' {'Not completed',Completed}
+@attribute 'Slide 31' {'Not completed',Completed}
+@attribute 'Slide 32' {'Not completed',Completed}
+@attribute 'Slide 33' {'Not completed',Completed}
+@attribute 'Slide 34' {'Not completed',Completed}
+@attribute 'Slide 35' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 36' {'Not completed',Completed}
+@attribute 'Slide 37' {'Not completed',Completed}
+@attribute 'Slide 38' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 39' {'Not completed'}
+@attribute 'Slide 87' {'No submission','Passed submission','Failed submission'}
+
+@data
+
+
+Classifier Model
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 331
+	Merit of best subset found:    0.32 
+
+Attribute Subset Evaluator (supervised, Class (nominal): 41 Slide 87):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 20,29,32,36,39 : 5
+                     Slide 19
+                     Slide 28
+                     Slide 31
+                     Slide 35
+                     Slide 38
+
+
+Header of reduced data:
+@relation 'end-of-challenge-challenge-beginners-2018-weka.filters.unsupervised.attribute.Remove-R175-179-weka.filters.unsupervised.attribute.Remove-R89-174-weka.filters.unsupervised.attribute.Remove-R74-87-weka.filters.unsupervised.attribute.Remove-R58-73-weka.filters.unsupervised.attribute.Remove-R41-57-weka.filters.unsupervised.attribute.Remove-V-R39,36,29,23,20,17,13,10,6,35,37,30-31,33-34,27,26,28,21,25,24,15,14,22,18,32,8,19,7,9,12,11,16,5,2,4,1,3,38,40-41-weka.filters.unsupervised.attribute.Remove-V-R20,29,32,36,39,41'
+
+@attribute 'Slide 19' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 28' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 31' {'Not completed',Completed}
+@attribute 'Slide 35' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 38' {'Passed submission','No submission','Failed submission'}
+@attribute 'Slide 87' {'No submission','Passed submission','Failed submission'}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+Slide 38 = Passed submission
+|   Slide 19 = Passed submission: Passed submission (5825.0/1614.0)
+|   Slide 19 = No submission
+|   |   Slide 28 = Passed submission: Passed submission (72.0/33.0)
+|   |   Slide 28 = No submission: No submission (13.0/3.0)
+|   |   Slide 28 = Failed submission: No submission (1.0)
+|   Slide 19 = Failed submission
+|   |   Slide 28 = Passed submission: Passed submission (20.0/7.0)
+|   |   Slide 28 = No submission: No submission (3.0/1.0)
+|   |   Slide 28 = Failed submission: Passed submission (1.0)
+Slide 38 = No submission: No submission (2633.0/198.0)
+Slide 38 = Failed submission: No submission (89.0/39.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	13
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6734               77.7868 %
+Incorrectly Classified Instances      1923               22.2132 %
+Kappa statistic                          0.5506
+Mean absolute error                      0.2174
+Root mean squared error                  0.3301
+Relative absolute error                 64.7978 %
+Root relative squared error             80.6148 %
+Total Number of Instances             8657     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.602    0.056    0.907      0.602    0.724      0.586    0.778     0.789     No submission
+                 0.946    0.401    0.718      0.946    0.816      0.585    0.778     0.717     Passed submission
+                 0.000    0.000    ?          0.000    ?          ?        0.510     0.006     Failed submission
+Weighted Avg.    0.778    0.235    ?          0.778    ?          ?        0.777     0.748     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 2484 1644    0 |    a = No submission
+  244 4250    0 |    b = Passed submission
+   10   25    0 |    c = Failed submission
+
